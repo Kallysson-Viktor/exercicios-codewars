@@ -1,18 +1,9 @@
-# separador = "/"
-# minha_lista = ["Azul", "Amarelo", "Laranja"]
-# string_resultante = separador.join(minha_lista)
-
-# print(string_resultante)
-# print(type(string_resultante))
-# ============================
-# # posicoes          0           1           2         3        4
-# minha_lista = ["Brasil", "Argentina", "Colômbia", "Peru", "Bolívia"]
-
-# primeiro_pedaco = minha_lista[:2]
-# print(f"Primeiro pedaço: {primeiro_pedaco}")
-
-# segundo_pedaco = minha_lista[2:]
-# print(f"Segundo pedaço: {segundo_pedaco}")
+"""
+Escreva uma função `partlist` que forneça todas as maneiras de dividir uma lista (um array) de pelo menos dois elementos em duas partes não vazias.
+Cada par de partes não vazias será representado como um par (ou um array para linguagens sem tuplas, ou uma `struct` em C — veja os exemplos de casos de teste para C).
+Cada parte será representada como uma string.
+Os elementos do par devem manter a mesma ordem da lista original.
+"""
 def partlist(arr):
     resultado = []
     separador = " "
@@ -30,3 +21,4 @@ def partlist(arr):
 
 a = ["az", "toto", "picaro", "zone", "kiwi"]
 print(partlist(a))
+
